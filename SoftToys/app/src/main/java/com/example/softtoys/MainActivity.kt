@@ -12,17 +12,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Получаем WebView из макета
         val webView = findViewById<WebView>(R.id.webView)
-
-        // Включаем JavaScript
         val webSettings: WebSettings = webView.settings
         webSettings.javaScriptEnabled = true
+//        webSettings.cacheMode = WebSettings.LOAD_NO_CACHE
 
-        // Задаем WebViewClient, чтобы открывать ссылки внутри WebView, а не в браузере
+//        webView.clearCache(true)
+//        webView.clearHistory()
         webView.webViewClient = WebViewClient()
 
-        // Загружаем URL
+// Добавляем параметр времени к URL для загрузки новой версии страницы
+        val timestamp = System.currentTimeMillis()
         webView.loadUrl("https://terrces.github.io/AndroidApp/")
+        WebView.setWebContentsDebuggingEnabled(true)
     }
 }
