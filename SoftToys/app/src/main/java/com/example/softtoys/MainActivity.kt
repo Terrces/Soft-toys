@@ -5,6 +5,8 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import  android.webkit.JsPromptResult
+import  android.webkit.JsResult
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val webView = findViewById<WebView>(R.id.webView)
         val webSettings: WebSettings = webView.settings
-//        webSettings.javaScriptEnabled = true
+        webView.settings.javaScriptEnabled = true
 //        webSettings.cacheMode = WebSettings.LOAD_NO_CACHE
 
       webView.clearCache(true)
