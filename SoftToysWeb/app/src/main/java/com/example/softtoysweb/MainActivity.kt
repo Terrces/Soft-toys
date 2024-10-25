@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         // Задаем WebViewClient, чтобы открывать ссылки внутри WebView, а не в браузере
         webView.webViewClient = WebViewClient()
-        webView.loadUrl("https://github.com/Terrces/GifClicker")
+        webView.loadUrl("https://terrces.github.io/AndroidApp/")
         webSettings.domStorageEnabled = true  // Поддержка локального хранилища
         webSettings.loadWithOverviewMode = true // Масштабирование контента по ширине экрана
         webSettings.useWideViewPort = true
