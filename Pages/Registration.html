@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="info">
         <text class="appname">Мягкие Игрушки</text><br>
-        <text class="title">Вход</text>
+        <text class="title">Регистрация</text>
     </div>
     <div class="interactive" style="height:100%;">
             <text style="margin-top:20%;">Логин:</text>
             <input>
             <text>Пароль:</text>
             <input type="password">
+            <text>Подтвердите пароль:</text>
+            <input type="password">
         <div class="buttons">
-            <button type="button" onclick="window.location.href='./Pages/MainPage.html'">Войти</button>
-            <button type="button" onclick="window.location.href='./Pages/Registration.html'">Создать аккаунт</button>
+            <button>Готово</button>
+            <button onclick="window.history.back()">Назад</button>
         </div>
     </div>
-    <script type="module" src="Scripts/Style.js">
-    </script>
+    <script type="module" src="../Scripts/Style.js"></script>
 </body>
