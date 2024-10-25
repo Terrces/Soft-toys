@@ -14,10 +14,10 @@ class MainActivity : AppCompatActivity() {
 
         val webView = findViewById<WebView>(R.id.webView)
         val webSettings: WebSettings = webView.settings
-        webSettings.javaScriptEnabled = true
+//        webSettings.javaScriptEnabled = true
 //        webSettings.cacheMode = WebSettings.LOAD_NO_CACHE
 
-//        webView.clearCache(true)
+      webView.clearCache(true)
 //        webView.clearHistory()
         webView.webViewClient = WebViewClient()
 
