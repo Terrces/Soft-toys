@@ -17,14 +17,12 @@ class MainActivity : AppCompatActivity() {
         val webView = findViewById<WebView>(R.id.webView)
         val webSettings: WebSettings = webView.settings
         webView.settings.javaScriptEnabled = true
-//        webSettings.cacheMode = WebSettings.LOAD_NO_CACHE
+        webSettings.cacheMode = WebSettings.LOAD_NO_CACHE
 
-      webView.clearCache(true)
+//        webView.clearCache(true)
 //        webView.clearHistory()
         webView.webViewClient = WebViewClient()
 
-// Добавляем параметр времени к URL для загрузки новой версии страницы
-        val timestamp = System.currentTimeMillis()
         webView.loadUrl("https://terrces.github.io/AndroidApp/")
         WebView.setWebContentsDebuggingEnabled(true)
     }
