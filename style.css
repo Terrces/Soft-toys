@@ -24,7 +24,13 @@ button{
     margin-top:0.2em;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius:16px;
-    border:0px none transparent;
+    border:2px solid transparent;
+    transition:0.5s ease ;
+}
+button:hover{
+    color:white;
+    border:2px dotted white;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 input{
     font-size: large;
@@ -34,6 +40,12 @@ input{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius:16px;
     border:2px dotted white;
+    transition:0.5s ease ;
+}
+input:hover{
+    color:white;
+    border:2px dotted white;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .buttons{
     display:flex;
