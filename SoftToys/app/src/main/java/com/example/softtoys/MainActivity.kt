@@ -19,8 +19,6 @@ class MainActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
         webSettings.cacheMode = WebSettings.LOAD_NO_CACHE
 
-//        webView.clearCache(true)
-//        webView.clearHistory()
         webView.webViewClient = WebViewClient()
 
         webView.loadUrl("https://terrces.github.io/AndroidApp/")
