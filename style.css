@@ -7,10 +7,15 @@ html{
     font-family: 'Montserrat','italy';
     height:100%;
     overflow: hidden;
+
 }
 body{
     opacity:0%;
+    height:100vh;
     transition:0.5s ease;
+    background: url("https://preview.redd.it/does-anyone-have-a-better-yuyuko-fumo-png-i-downloaded-this-v0-eiiyperewbid1.png?auto=webp&s=0380e9626a84b386496b8b350e5efa1029bf3127");
+    background-repeat:repeat;
+    background-size:15em;
 }
 button{
     cursor: pointer;
