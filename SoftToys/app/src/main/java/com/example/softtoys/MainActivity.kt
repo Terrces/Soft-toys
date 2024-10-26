@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         webView.webViewClient = WebViewClient()
 
-        webView.loadUrl("https://terrces.github.io/AndroidApp/")
+        webView.loadUrl("https://terrces.github.io/Soft-toys/")
         WebView.setWebContentsDebuggingEnabled(true)
     }
 }
