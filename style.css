@@ -79,7 +79,7 @@ input:hover{
     border-top: 2px solid white;
     justify-content: left;
     width:100vw;
-    height:5%;
+    height:4em;
     bottom:0px;
     backdrop-filter:blur(16px);
     /* background-color:rgba(0, 0, 0, 0.8); */
