@@ -6,7 +6,7 @@ html{
     color:white;
     font-family: 'Montserrat','italy';
     height:100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body{
     opacity:0%;
