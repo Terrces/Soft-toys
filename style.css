@@ -57,5 +57,6 @@ input{
     font-size: large;
 }
 .title{
+    margin:0px;
     font-size: 4em;
 }
