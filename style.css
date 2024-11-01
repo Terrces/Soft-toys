@@ -14,9 +14,25 @@ body{
     width:100vw;
     margin:0px;
     transition:background-position 15s linear;
-    background: url("https://preview.redd.it/does-anyone-have-a-better-yuyuko-fumo-png-i-downloaded-this-v0-eiiyperewbid1.png?auto=webp&s=0380e9626a84b386496b8b350e5efa1029bf3127");
+    background: url("https://media.tenor.com/iPKa5SFvaKAAAAAi/touhou-cirno.gif");
     background-repeat:repeat;
     background-size:15em;
+}
+select
+{
+    font-size:1em;
+    text-align: center;
+    margin:6px 0px;
+    background-color:rgba(255,255,255,0.5);
+    border:2px solid white;
+    border-radius:16px;
+    padding:4px;
+    color:black;
+    width:100%;
+}
+option
+{
+    background-color:black;
 }
 button{
     cursor: pointer;
@@ -58,11 +74,25 @@ input:hover{
     bottom:32px;
 
 }
-.inbuttonimg{
+.bottombtn
+{
+    width:1em;
+    margin:0px 4px;
+    border-radius:0px;
+}
+.bottombtn:hover{
     filter: invert(1);
-    /* &:hover{
-        filter:saturate(30%);
-    } */
+    filter: drop-shadow(1px 1px 1px);
+    background-color:transparent;
+    border:0px solid transparent;
+}
+.inbuttonimg{
+    width:5em;
+    height:5em;
+    max-height:100%;
+    max-width:1.6em;
+    margin-top:-4px;
+    margin-left:-14px;
 }
 .interactive{
     display: flex;
