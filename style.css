@@ -108,13 +108,14 @@ input:hover{
 .Product
 {
     cursor: pointer;
+    border: 2px solid white;
     display: flex;
     flex-direction: column;
     padding:16px;
     margin:8px;
     border-radius:16px;
     background-color:rgba(255, 255, 255, 0.5);
-    background-size:35vh;
+    background-size:150%;
     padding:2em;
     padding-top:16em;
     background-repeat: no-repeat;
