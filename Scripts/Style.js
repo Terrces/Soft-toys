@@ -1,8 +1,7 @@
 if(document.body.opacity = "0%")
 setTimeout(() => {document.body.style.opacity = "100%";},1)
-let BackgroundAnimationSpeed = 0;
+let BackgroundAnimationSpeed = 15000;
 let BackgroundPos = 0;
-BackgroundAnimationSpeed = 15000;
 BackgroundPos+=1920;
 document.body.style.backgroundPositionX = BackgroundPos+"px"
 document.body.style.backgroundPositionY = BackgroundPos+"px"
