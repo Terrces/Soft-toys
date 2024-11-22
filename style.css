@@ -114,7 +114,9 @@ input:hover{
     margin:8px;
     border-radius:16px;
     background-color:rgba(255, 255, 255, 0.5);
-    background-size:70%;
+    background-size:25vw;
+    padding:2em;
+    padding-top:16em;
     background-repeat: no-repeat;
     background-position-x: center;
 }
