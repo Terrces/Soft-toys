@@ -67,15 +67,15 @@ input:hover{
     width:100vw;
     position:absolute;
     bottom:32px;
-
 }
 .bottombtn
 {
     font-size: large;
-    background-color:rgba(0,0,0,0.5);
+    /* background-color:rgba(0,0,0,0.5); */
+    background-color:transparent;
     border-radius:16px;
     width:1em;
-    margin:0px 4px;
+    margin:0px 2px;
 }
 .bottombtn:hover{
     filter: invert(1);
@@ -85,7 +85,7 @@ input:hover{
 }
 .inbuttonimg{
     color:white;
-    filter: invert(1);
+    /* filter: invert(1); */
     width:5em;
     height:5em;
     max-height:100%;
@@ -119,15 +119,24 @@ input:hover{
     background-color:rgba(255, 255, 255, 0.5);
     background-size:135%;
     padding:2em;
-    padding-top:16em;
+    padding-top:17em;
     background-repeat: no-repeat;
     background-position-x: center;
+    filter:brightness(100%);
+    color:black;
+    transition:0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    &:hover
+    {
+        filter:brightness(110%);
+        backdrop-filter:blur(8px);
+    }
+
 }
 .bottom{
     position: absolute;
     display: flex;
     backdrop-filter:blur(8px);
-    
+    background-color: rgba(255,255, 255, 0.8);
     justify-content: left;
     width:100vw;
     height:3em;
