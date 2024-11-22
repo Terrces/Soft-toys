@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body style="overflow-y: auto;">
     <div class="info">
         <text class="appname">Мягкие Игрушки</text><br>
         <text class="title">Профиль</text>
     </div>
-    <div>
-        <div style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
-            <div style="display:flex;flex-direction:column; position:absolute; right:0px;">
-
-            </div>
+    <div id="AuthTrue" style="display: none;">
+        <div style="display:flex; flex-direction:column; justify-content: center; align-items: center; overflow-y: auto;">
             <button type="button" style="width:16em;">История покупок</button>
-            <div style="display:flex; flex-direction:column; justify-content:center; align-items: center;">
+            <div style="display:flex; flex-direction:column; justify-content:center; align-items: center;overflow-y: auto;">
                 <label style="font-size:2em;">Изменить что либо</label><br>
                 <img class="Avatar" src="https://media.tenor.com/hkeIIzeY3w8AAAAi/cat.gif" 
                 style=" width:12em;background-color:white; border:2px solid purple; border-radius:16px;">
@@ -32,9 +29,26 @@
                 </select>
             </div>
 
-            <button type="button" style="width:16em; bottom:70px;position: absolute;">Сохранить</button>
+            <button type="button" style="width:16em; margin-bottom:8px;">Сохранить</button>
         </div>
-        
+    </div>
+    <div id="AuthFalse">
+        <div style="display:flex; flex-direction:column; justify-content: center; align-items: center; overflow-y: auto;">
+            <label style="background-color: black; padding:18px; border-radius:16px;">К сожалению вы не авторизовались<br> вы можете войти в аккаунт или зарегестрироваться!</label>
+            <button onclick="window.top.location.href='./SignIn.html'">Войти</button>
+            <button onclick="window.top.location.href='./Registration.html'">Зарегестрироваться</button>
+        </div>
     </div>
     <script type="module" src="../Scripts/Style.js"></script>
+    <script type="module">
+        if(localStorage.getItem("Session") == null){
+            document.getElementById("AuthFalse").style.display = "block";
+            document.getElementById("AuthTrue").style.display = "none";
+        }
+        else
+        {
+            document.getElementById("AuthFalse").style.display = "none";
+            document.getElementById("AuthTrue").style.display = "block";
+        }
+    </script>
 </body>

@@ -42,12 +42,7 @@ button{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius:16px;
     border:2px solid transparent;
-    transition:0.5s ease ;
-}
-button:hover{
-    color:white;
-    border:2px dotted white;
-    background-color: rgba(0, 0, 0, 0.8);
+    transition:0.5s ease;
 }
 input{
     font-size: large;
@@ -76,9 +71,11 @@ input:hover{
 }
 .bottombtn
 {
+    font-size: large;
     width:1em;
     margin:0px 4px;
     border-radius:0px;
+    background-color:transparent;
 }
 .bottombtn:hover{
     filter: invert(1);
@@ -108,7 +105,19 @@ input:hover{
     flex-direction: column;
     height:20%;
 }
-
+.Product
+{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding:16px;
+    margin:8px;
+    border-radius:16px;
+    background-color:rgba(255, 255, 255, 0.5);
+    background-size:70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
 .bottom{
     position: absolute;
     display: flex;
