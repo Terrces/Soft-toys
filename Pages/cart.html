@@ -9,6 +9,38 @@
     <div class="info">
         <text class="appname">Мягкие Игрушки</text><br>
         <text class="title">корзина</text>
+        
+    </div>
+    <div  style="display:flex; flex-direction:column; flex-wrap: wrap; place-content:center;" >
+        <div id="MainContainer"style="display:flex; flex-direction:row; flex-wrap: wrap; place-content:center;">
+            
+        </div>
+        <button>Купить</button>
     </div>
     <script type="module" src="../Scripts/Style.js"></script>
+    <script type="module">
+        //Я знаю что этот код говно но у меня не было времени думать как реализовать это более правильно так как дедлайны ☠
+        let cartName = JSON.parse(localStorage.getItem("cartName"))
+        let cartImage = JSON.parse(localStorage.getItem("cartImage"));
+        let cartPrice = JSON.parse(localStorage.getItem("cartPrice"))
+        console.log(cartName);
+        for(let i = 0; i < cartName.length;i++){
+            let container = document.createElement("div");
+            container.classList = "Product"
+            container.style.cssText = `background-image:url('${cartImage[i]}');`
+            let name = document.createElement("label");
+            let price = document.createElement("label");
+            let ptext = document.createElement("label");
+            let textStyle = "color:white;filter: drop-shadow(0px 0px 2px black);"
+            name.style.cssText = textStyle;
+            ptext.style.cssText = textStyle;
+            price.style.cssText = textStyle;
+            name.textContent = cartName[i];
+            console.log("s")
+            price.textContent = cartPrice[i];
+            ptext.textContent = "Цена: ";
+            container.append(name,ptext,price)
+            document.getElementById("MainContainer").append(container)
+        }
+    </script>
 </body>
