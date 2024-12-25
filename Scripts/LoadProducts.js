@@ -2,7 +2,7 @@
 //это более правильно так как дедлайны ☠
 
 let ProductFetch = await fetch("/Data.json");
-let Product = await ProductFetch.json()
+let Product = await ProductFetch.json();
 
 let cartName = [];
 let cartImage = [];
